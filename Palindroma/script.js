@@ -9,10 +9,10 @@ const word = prompt("Inserisci una parola");
 console.log(word);
 
 // Invoco la funzione
-palindrome();
+const reverse = getPalindrome(word);
 
 // Funzione
-function palindrome() {
+function getPalindrome(word) {
   // Converto la parola inserita dall'utente in un array
   const arrayWord = word.split("");
   console.log(arrayWord);
@@ -23,13 +23,14 @@ function palindrome() {
   const reverseWord = reverseArray.join("");
   console.log(reverseWord);
 
-  // Condizione
-  // Se la parola al rovescio è uguale alla parola inserita dall'utente allora è palindroma
-  // altrimenti non lo è
-  if (reverseWord === word) {
-    console.log(word + " è una parola palindroma");
-  } else {
-    console.log(word + " non è una parola palindroma");
-  }
+  return reverseWord;
 }
 
+// Condizione
+// Se la parola al rovescio è uguale alla parola inserita dall'utente allora è palindroma
+// altrimenti non lo è
+if (reverse === word) {
+  console.log(word + " è una parola palindroma");
+} else {
+  console.log(word + " non è una parola palindroma");
+}
