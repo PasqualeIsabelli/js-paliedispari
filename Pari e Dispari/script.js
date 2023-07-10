@@ -25,7 +25,7 @@ function sumNumbers(userNum, pcNum) {
   let sum = userNum + pcNum;
   console.log(sum);
 
-  // Stabilisco la condizione (se la somma è pari vince utente altrimenti vince pc)
+  // Stabilisco la condizione (se la somma è pari vince l'utente altrimenti vince il pc)
   if (sum % 2 === 0) {
     console.log ("Utente ha vinto");
   } else {
