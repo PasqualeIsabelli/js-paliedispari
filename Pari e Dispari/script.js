@@ -31,6 +31,4 @@ function sumNumbers(userNum, pcNum) {
   } else {
     console.log ("Pc ha vinto")
   }
-
-  return sum;
 }

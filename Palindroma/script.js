@@ -32,3 +32,4 @@ function palindrome() {
     console.log(word + " non è una parola palindroma");
   }
 }
+
